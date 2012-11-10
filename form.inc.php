@@ -151,7 +151,7 @@ if (!empty ($advert['headline']) && !empty ($advert['body']))
 	: include 'verify.inc.php';
 if (!$errorv)
 	: include 'check_length.inc.php';
-if (!$errorlen1 && !$errorlen2)
+if (!$errorlen1 && !$errorlen2 && !$errorlen3)
 	: include 'image_upload.inc.php';
 
 if (!$errors1_1 && !$errors1_2 && !$errors1_3)
@@ -204,6 +204,9 @@ if ($errorlen1)
 endif;
 if ($errorlen2)
 	: echo '<strong style="color:#CC0000;">Your Body text must be at least 70 xters long! Do not forget to Upload pic again if you did that before.</strong><br/><br/>';
+endif;
+if ($errorlen3)
+	: echo '<strong style="color:#CC0000;">Your Body text exceeded the 1000 xters limit! Do not forget to Upload pic again if you did that before.</strong><br/><br/>';
 endif;
 include 'form_content.inc.php';
 endif;
