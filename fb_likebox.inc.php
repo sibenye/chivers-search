@@ -1,0 +1,2 @@
+<!-- Facebook Likebutton below (Using XFBML)-->
+<fb:like href="<?php if ($view == 'showad'): echo 'http://www.chivers-search.com/showad.php?view=showad&id='.$id; else: echo 'http://www.chivers-search.com'; endif; ?>" send="false" width="240" show_faces="true"></fb:like>
