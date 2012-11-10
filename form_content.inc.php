@@ -28,7 +28,7 @@
     <p>&nbsp;</p>
 
 
-<h1><label for="body">Body:<em>Please describe your Ad here; Clearity is important and don't forget to include your contact.</em>* (1000 xters max)</label></h1>
+<h1><label for="body">Body:<em>Please describe your Ad here; Clearity is important and don't forget to include your contact.</em>* (2000 xters max)</label></h1>
 
 <textarea name="advert[body]" rows="10" cols="80" wrap="hard" style="margin-right:20px;"><?php echo safe_output($advert['body']); ?></textarea><br/><br/>
 
